@@ -1,0 +1,21 @@
+section article {
+	background-color:green;
+	height:200px;
+	width:800px;
+	border:2px green;
+	padding:20px;
+	margin:auto;
+	margin-top:2%;
+	font-size:21px;
+	box-shadow:10px 20px 8px gray;
+	
+}
+aside img{
+	height:200px;
+	width:100px;
+}
+section article{
+	border:1px;
+	padding:10px;
+	box-shadow:5px 10px 8px gray;
+}

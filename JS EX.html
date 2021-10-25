@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="en">
+     <head>
+	 <meta charset="UTF-8">
+	 </head>
+	     <body>
+		 
+		 <h2><p>This is Fruits list</p></h2>
+		 <h2>pop()</h2>
+		 <p id="fruits1"></p>
+		 <p id="fruits2"></p>
+		 <button onclick="myFunction()">Try it^</button>
+		 <script>
+		 var fruits=["Apple","Banana","Mango","Orange","Watermelon"];
+		 
+		         document.getElementById("fruits1").innerHTML= fruits;
+				 function myFunction()
+			     {
+				 fruits.pop();
+			     document.getElementById("fruits2").innerHTML = fruits;
+		          }
+		 
+		</script> 
+				
+		<h2><p>This is Colors list</p></h2>
+		<h2>push()</h2>
+		<p id="colors"></p>
+		
+		
+		<button onclick="myFunction1()">Push it-></button>
+	    <script>
+				
+		 var colors=["Red","Black","Blue","Green","Pink"];
+		  
+		 function myFunction1()
+			{
+			colors.push("white");
+			document.getElementById("colors").innerHTML = colors;
+			}
+						
+
+		</script>
+				 
+	    <h2><p>This is Flowers list</p></h2>
+		<h2>shift()</h2>
+        <p id="Flowers1"></p>
+		<p id="Flowers2"></p>
+		<button onclick="myFunction3()">Shift it--</button>
+		<script>
+				
+		  var Flowers=["Rose","Lily","Sunflower","Jasmine","Lotus"];
+		  document.getElementById("Flowers1").innerHTML= Flowers;
+		    function myFunction3()
+			{
+			Flowers.shift();
+			document.getElementById("Flowers2").innerHTML = Flowers;
+			}
+		</script>
+				
+		<h2><p>This is languages list</p></h2>
+		<h2>splice()</h2>
+        <p id="languages1"></p>
+		<p id="languages2"></p>
+		<button onclick="myFunction4()">Splice it</button>
+		<script>
+			var languages=["JAVA","C","C++","HTML","CSS"];
+				document.getElementById("languages1").innerHTML= "Original Array:<br>" +languages;
+			function myFunction4()
+			{
+			languages.splice(2,0,"JavaScript","AngularJS");
+			document.getElementById("languages2").innerHTML = "New Array:<br>" +languages;
+			}
+				 
+		</script>
+		 
+		     
+		  
+		 </body>
+</html>
+		 

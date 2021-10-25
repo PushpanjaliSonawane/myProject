@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="en">
+     <head>
+	 <meta charset="UTF-8">
+	 </head>
+	     <body>
+		 
+		 <p>Voting details</p>
+		 <p id="greet"></p>
+		 <p>sub</p>
+		 <p id="result"></p>
+		 <p id="demo"></p>
+		<script>
+		 var a=10;
+		 var std_name="hello";
+		 var marks=12.6;
+		 let b=20;
+		 
+	<!--IF-->
+		if(b<18){
+		    document.getElementById("greet").innerHTML="Not allowed to vote";
+		 }
+		 else if(b>20)
+		 {
+		     document.getElementById("greet").innerHTML="If male allowed to vote";
+			 }
+			else
+			{
+			  document.getElementById("greet").innerHTML="Allowed to vote and marry too";
+			}	
+
+    <!--SWITCH CASE-->			
+			 let day;
+			 switch(new Date().getDay())
+			 {
+			    case 0:
+				day="Sunday";
+				break;
+				case 1:
+				day="Monday";
+				break;
+				case 2:
+				day="Tuesday";
+				break;
+				case 3:
+				day="Wednesday";
+				break;
+				case 4:
+				day="Thursday";
+				break;
+				case 5:
+				day="Friday";
+				break;
+				case 6:
+				day="Saturday";
+				
+			 }
+			    //document.getElementById("result").innerHTML="Today is" +day;
+				
+				//const d= new Date();
+				//document.getElementById("demo").innerHTML=d.getmonth() +1;
+				//document.getElementById("demo").innerHTML=d.getTime();
+				
+	<!--FOR LOOP-->
+				
+				let text="";
+				for(let i=0;i<5;i++)
+				{
+				 text+= "The number is"+ i +"<br>";
+				}
+				document.getElementById("demo").innerHTML=text;
+				
+    <!--WHILE LOOP-->
+				/*let text = "";
+				let i=0;
+				while(i<10)
+				{
+				  text += "<br>"The number is" + i;
+				  i++;
+				}
+				document.getElementById("demo").innerHTML=text;*/
+		 </script>
+		 
+		  <!--<button type="button" onclick="myFunction()">try it</button><br>-->
+		  <button type="button" id="try">click me</button>
+		  <script src="Java_S1.js">
+		  </script>
+		 </body>
+</html>

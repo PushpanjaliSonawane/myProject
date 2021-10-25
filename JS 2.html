@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="en">
+     <head>
+	 <meta charset="UTF-8">
+	 </head>
+	     <body>
+		 <!--<p id="demo"></p>-->
+		 <p>This is Fruits list</p>
+		 <p id="fruits1"></p>
+		 <p id="fruits2"></p>
+		 
+		 <script>
+		/*let text ="";
+		 let i=0;
+		 
+				while(i<10)
+				{
+				  text += "<br>The number is" + i;
+				  i++;
+				}
+				document.getElementById("demo").innerHTML= text; */
+				
+				
+				var fruits=["Apple","Banana","Mango","Orange","Watermelon"];
+				 //document.getElementById("fruits").innerHTML= fruits;
+				for(let fruit of fruits)
+				 {
+				   //document.write("This is list of Fruits");
+				   document.write("<li>"+ fruit+"</li>");
+				   //document.write("</ul>");
+				 }
+				 document.getElementById("fruits1").innerHTML= fruits;
+			     fruits.pop();
+			     document.getElementById("fruits2").innerHTML = fruits;
+				</script> 
+				<p>This is Colors list</p>
+		        <p id="colors"></p>
+				<script>
+				
+				var colors=["Red","Black","Blue","Green","Pink"];
+				for(var color of colors)
+				 {
+				   document.write("<li>" +color+ "</li>");
+				 }
+				 </script>
+				 
+				 <p>This is Flowers list</p>
+		        <p id="Flowers"></p>
+				<script>
+				
+				var Flowers=["Rose","Lily","Sunflower","Jasmine","Lotus"];
+				for(var flower of Flowers)
+				 {
+				   document.write("<li>" +flower+ "</li>");
+				 }
+				</script>
+				
+				<p>This is languages list</p>
+		        <p id="languages"></p>
+				<script>
+				var languages=["JAVA","C","C++","HTML","CSS"];
+				for(var language of languages)
+				 {
+				   document.write("<li>" +language+ "</li>");
+				 }
+				
+				/*for(var i =0;i<fruits.length;i++)
+				{
+				 document.write(fruits[i] + "<br>");
+				}*/
+				
+				 
+				  /*for(var i in Flowers)
+				  {
+				    document.write(Flowers[i] + "<br>");
+				  }
+				  for(var i in languages)
+				  {
+				    document.write(languages[i] + "<br>");
+				  }
+				
+				
+				/*document.write(fruits[0]);
+				document.write(fruits[1]);
+				document.write(fruits[2]);
+				document.write(fruits[3]);
+				document.write(fruits[4]);
+				
+				document.write(fruits[fruits.length-1]);
+				document.write(fruits.length); */
+		 </script>
+		 
+		 <button type="button" id="try">click me</button>
+		  
+		  
+		 </body>
+</html>
